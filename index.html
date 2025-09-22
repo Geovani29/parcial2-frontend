@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List App</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div id="login-page" class="page active">
         <main class="login-container">
@@ -13,25 +15,26 @@
                 <h1>Bienvenido</h1>
                 <p>Inicia sesión para acceder a tu lista de tareas</p>
             </header>
-            
+
             <form id="login-form" class="login-form">
                 <div class="form-group">
                     <label for="username">Usuario:</label>
                     <input type="text" id="username" name="username" required>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="password">Contraseña:</label>
                     <input type="password" id="password" name="password" required>
                 </div>
-                
+
                 <button type="submit" class="login-btn">Iniciar Sesión</button>
-                
+
                 <div id="login-error" class="error-message" style="display: none;">
                     Credenciales incorrectas. Intenta nuevamente.
                 </div>
             </form>
-            <p class="login-hint"> Usa <strong>admin</strong> como usuario y <strong>admin</strong> como contraseña para iniciar sesión.</p>
+            <p class="login-hint"> Usa <strong>admin</strong> como usuario y <strong>admin</strong> como contraseña para
+                iniciar sesión.</p>
         </main>
     </div>
 
@@ -46,11 +49,12 @@
                 <form id="add-todo-form" class="add-todo-form">
                     <div class="form-group">
                         <label for="todo-text">Nueva tarea:</label>
-                        <input type="text" id="todo-text" name="todo-text" placeholder="Escribe tu tarea aquí..." required>
+                        <input type="text" id="todo-text" name="todo-text" placeholder="Escribe tu tarea aquí..."
+                            required>
                     </div>
                     <button type="submit" class="add-btn">Agregar Tarea</button>
                 </form>
-                
+
                 <div id="todo-error" class="error-message" style="display: none;"></div>
             </section>
 
@@ -64,4 +68,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
